@@ -1,7 +1,7 @@
 # ToolVault
 a usefull tool-colection
 
-## New Features
+## Changelog
 
 ### v0.0.5 
 

@@ -25,7 +25,7 @@ def copy_to_clipboard():
 
 # Create the main window
 root = tk.Tk()
-root.title("Password Generator")
+root.title("PGen")
 
 # Get the screen width and height
 screen_width = root.winfo_screenwidth()

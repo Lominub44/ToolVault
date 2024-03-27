@@ -6,19 +6,21 @@ class AutoClick:
     def __init__(self, master):
         self.master = master
         self.master.title("AutoClick")
+        
+        self.master.resizable(False, False)
 
         self.label = tk.Label(master, text="Distance between clicks (in milliseconds):")
         self.label.pack()
 
         self.entry = tk.Entry(master)
-        self.entry.insert(0, "1000")  # Default interval of 1000 milliseconds (1 second)
+        self.entry.insert(0, "10")  # Default interval of 10 milliseconds
         self.entry.pack()
 
         self.button = tk.Button(master, text="Start/Stop AutoClick", command=self.toggle_auto_click)
         self.button.pack(pady=20)
 
         self.is_auto_clicking = False
-        self.click_interval = 1000  # Default interval of 1000 milliseconds (1 second)
+        self.click_interval = 10  # Default interval of 10 milliseconds
 
         # Adding key event for F3 using the keyboard module
         keyboard.on_press_key("F3", self.toggle_auto_click)
@@ -42,7 +44,7 @@ class AutoClick:
 
 def main():
     root = tk.Tk()
-    root.geometry("400x300")
+    root.geometry("230x100")
     app = AutoClick(root)
     root.mainloop()
 

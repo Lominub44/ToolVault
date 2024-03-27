@@ -5,6 +5,13 @@ a usefull tool-colection
 
 ### v0.0.5 
 
+-	requirements.txt (i hope it has all requirements :pensive:)
+-	"Get it on ToolVault" icon idk
+-	New tools (only SRC and exe, not in main app)
+-	many new files, idk all of them :(
+
+### v0.0.5 
+
 -	New spash-screen
 -	New SRCs of Tools :eyes: (PGen, winControll)
 -	very cheap Python instaler (useless)

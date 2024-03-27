@@ -7,7 +7,9 @@ class KeyMacro:
     def __init__(self, master):
         self.master = master
         master.title("AutoMove")
-
+        self.master.geometry("100x70")
+        self.master.resizable(False, False)
+        
         self.is_running = False
         self.create_widgets()
 

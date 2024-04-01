@@ -3,7 +3,7 @@ a usefull tool-colection
 
 ## Changelog
 
-### v0.0.5 
+### v0.0.6.0
 
 -	requirements.txt (i hope it has all requirements :pensive:)
 -	"Get it on ToolVault" icon idk

@@ -1,6 +1,8 @@
+# v0.0.6.1
+
 import tkinter as tk
 from tkinter import ttk
-from tkinter import messagebox  # separate import for messagebox
+from tkinter import messagebox
 import requests
 import os
 import sys
@@ -86,7 +88,7 @@ def show_product_page(tool):
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
 
-    # Set window width and height (slightly smaller than main window)
+    # Set window width and height
     window_width = 600
     window_height = 400
 
@@ -122,7 +124,7 @@ def show_discover_page():
     # Show the library page after the discover page
     show_library()
 
-# Function for creating a hidden directory (only for Windows)
+# Function for creating a hidden directory (only for Windows (maybe))
 def create_hidden_directory(directory):
     try:
         # Create the hidden directory
@@ -249,6 +251,8 @@ notebook.add(home_frame, text="Home")
 # Add a news and updates section
 news_and_updates = """
 Latest News:
+- Adding some features and Tools soon...
+- Website in progress
 - New tools added to ToolVault!
 - Stay tuned for upcoming features!
 """
@@ -276,9 +280,9 @@ RPC = Presence(client_id=1215393701002608710)
 RPC.connect()
 RPC.update(
     state="Made by LomiLab",
-    details="A hub for some useful tools",
-    large_image="logo",  # Replace "your_large_image_name" with the name of your large image
-    small_image="logo",  # Replace "your_small_image_name" with the name of your small image
+    details="A hub for some very useful tools",
+    large_image="logo",  
+    small_image="logo",  
     buttons=[
         {"label": "Repository", "url": "https://github.com/Lominub44/ToolVault"},
         {"label": "Discord Server", "url": "https://discord.gg/5gNuWKpzgF"}
@@ -290,7 +294,7 @@ def update_presence():
     while True:
         RPC.update(
             state="Made by LomiLab",
-            details="A hub for some usefull tools",
+            details="A hub for some very usefull tools",
             large_image="logo",  # Replace "your_large_image_name" with the name of your large image
             small_image="logo",  # Replace "your_small_image_name" with the name of your small image
             buttons=[
@@ -298,7 +302,7 @@ def update_presence():
                 {"label": "Discord Server", "url": "https://discord.gg/5gNuWKpzgF"}
             ]
         )
-        time.sleep(15)  # Update presence every 15 seconds
+        time.sleep(20)
 
 # Start the thread to update presence
 threading.Thread(target=update_presence, daemon=True).start()
@@ -308,3 +312,5 @@ show_discover_page()
 
 # Start main loop
 root.mainloop()
+
+# sorry for so mich comments

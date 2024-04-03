@@ -3,16 +3,20 @@ a usefull tool-colection
 
 ## Changelog
 
-### v0.00.6.1
+### v0.0.6
 
-- Some microscopic changes
+its not much...
 
-### v0.0.6.0
+#### v0.0.6.0
 
 -	requirements.txt (i hope it has all requirements :pensive:)
 -	"Get it on ToolVault" icon idk
 -	New tools (only SRC and exe, not in main app)
 -	Many new files, idk all of them :(
+
+#### v0.00.6.1
+
+- Some microscopic changes
 
 ### v0.0.5 
 

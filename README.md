@@ -3,18 +3,22 @@ a usefull tool-colection
 
 ## Changelog
 
+### v0.00.6.1
+
+- Some microscopic changes
+
 ### v0.0.6.0
 
 -	requirements.txt (i hope it has all requirements :pensive:)
 -	"Get it on ToolVault" icon idk
 -	New tools (only SRC and exe, not in main app)
--	many new files, idk all of them :(
+-	Many new files, idk all of them :(
 
 ### v0.0.5 
 
 -	New spash-screen
 -	New SRCs of Tools :eyes: (PGen, winControll)
--	very cheap Python instaler (useless)
+-	Very cheap Python instaler (useless)
 -	Broken CustomTKinter edition
 
 ### v0.0.4

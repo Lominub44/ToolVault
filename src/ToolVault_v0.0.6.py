@@ -1,4 +1,4 @@
-# v0.0.6.1
+# v0.0.6.2
 
 import tkinter as tk
 from tkinter import ttk
@@ -124,6 +124,36 @@ def show_discover_page():
     # Show the library page after the discover page
     show_library()
 
+# about page
+def show_about_page():
+    about_page = tk.Toplevel(root)
+    about_page.title(tool.name)
+
+    # Get screen width and height
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+
+    # Set window width and height
+    window_width = 600
+    window_height = 400
+    # Calculate x and y coordinates for centered window
+    x = (screen_width // 2) - (window_width // 2)
+    y = (screen_height // 2) - (window_height // 2)
+    # Product page settings
+    product_page.geometry(f"{window_width}x{window_height}+{x}+{y}")
+
+    tk.Label(about_page, text=f"About", font=("Helvetica", 18)).pack(pady=10)
+    about_text = """
+Latest News:
+- Adding some features and Tools soon...
+- Website in progress
+- New tools added to ToolVault!
+- Stay tuned for upcoming features!
+"""
+tk.Label(about_page, text=about_text, font=("Helvetica", 18)).pack(pady=5)
+# pleas work...
+
+
 # Function for creating a hidden directory (only for Windows (maybe))
 def create_hidden_directory(directory):
     try:
@@ -197,6 +227,7 @@ def update_progress(progress_var):
 
 
 hide_window()
+
 # Splash screen
 splash_screen = tk.Toplevel(root)
 splash_screen.overrideredirect(True)  # Remove window decorations

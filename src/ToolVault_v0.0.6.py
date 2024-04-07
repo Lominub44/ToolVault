@@ -1,4 +1,4 @@
-# v0.0.6.2
+# v0.0.6.3
 
 import tkinter as tk
 from tkinter import ttk
@@ -12,6 +12,7 @@ import threading
 import time
 import webbrowser
 
+# i will make a custom icon: https://pythonassets.com/posts/window-icon-in-tk-tkinter/
 
 # Function for downloading the tool
 def download_tool(tool):
@@ -127,31 +128,28 @@ def show_discover_page():
 # about page
 def show_about_page():
     about_page = tk.Toplevel(root)
-    about_page.title(tool.name)
+    about_page.title("about")
 
     # Get screen width and height
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
 
     # Set window width and height
-    window_width = 600
-    window_height = 400
+    window_width = 500
+    window_height = 300
     # Calculate x and y coordinates for centered window
     x = (screen_width // 2) - (window_width // 2)
     y = (screen_height // 2) - (window_height // 2)
     # Product page settings
-    product_page.geometry(f"{window_width}x{window_height}+{x}+{y}")
+    about_page.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
     tk.Label(about_page, text=f"About", font=("Helvetica", 18)).pack(pady=10)
     about_text = """
-Latest News:
-- Adding some features and Tools soon...
-- Website in progress
-- New tools added to ToolVault!
-- Stay tuned for upcoming features!
+Developers: Currently only @Lominub44
+
+if you want to help, visit our Repository
 """
-tk.Label(about_page, text=about_text, font=("Helvetica", 18)).pack(pady=5)
-# pleas work...
+    tk.Label(about_page, text=about_text, font=("Helvetica", 12)).pack(pady=5)  # pleas work...
 
 
 # Function for creating a hidden directory (only for Windows (maybe))
@@ -299,7 +297,8 @@ tk.Button(home_frame, text="featured_tool", command=lambda: show_product_page(fe
 # Quick links
 tk.Label(home_frame, text="Quick Links:", font=("Helvetica", 14)).pack(pady=5)
 tk.Button(home_frame, text="GitHub", command=lambda: webbrowser.open("https://github.com/Lominub44/ToolVault")).pack(pady=5)
-
+# about
+tk.Button(home_frame, text="About", command=lambda: show_about_page()).pack(pady=5)
 # Pack notebook widget
 notebook.pack(expand=1, fill="both")
 

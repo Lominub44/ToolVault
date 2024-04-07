@@ -14,9 +14,9 @@ its not much...
 -	New tools (only SRC and exe, not in main app)
 -	Many new files, idk all of them :(
 
-#### v0.00.6.1
+#### v0.00.6.3
 
-- Some microscopic changes
+- added about-page
 
 ### v0.0.5 
 
